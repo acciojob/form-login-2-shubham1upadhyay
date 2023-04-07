@@ -1,14 +1,12 @@
-function showAlert() {
-   let w = document.forms["myForm1"]["fname"].value;
-   let x = document.forms["myForm2"]["lName"].value;
-	 let  y= document.forms["myForm3"]["phone"].value;
-	 let z = document.forms["myForm4"]["mail"].value;
-	// let z = document.forms["myForm"]["phone"].value;
-  if (w == "" || x == "" || y==0 || z=="" ) {
-    alert("Field cannot be empty, please fill");
-    return false;
-  }else{
-	  var text = "First Name:\nLast Name:\nPhone Number:\nEmail ID: "
-	  alert(text)
-  }
+function showData() {
+	let  myArr = [];
+    myArr[0] = "First Name: " + document.getElementById('fname').value;
+	myArr[1] = "Last Name: " +document.getElementById('lname').value;
+	myArr[2] = "Phone Number: " + document.getElementById('number').value;
+	myArr[3] = "Email Id: " + document.getElementById('email').value;
+     var text = myArr[0] + "\n" + myArr[1]
+				+ "\n" + myArr[2]
+				+ "\n" + myArr[3]
+	alert(text)
+
 }
