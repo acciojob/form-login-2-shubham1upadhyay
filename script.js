@@ -8,5 +8,4 @@ function showData() {
 				+ "\n" + myArr[2]
 				+ "\n" + myArr[3]
 	alert(text)
-
 }
